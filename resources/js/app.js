@@ -1,10 +1,10 @@
 require('./bootstrap');
 window.Vue = require('vue');
 
-import homepage from './components/homepage.vue';
+import homepage from './components/Homepage.vue';
 
-Vue.component('homepage', (homepage).default);
+Vue.component('homepage', require('./components/Homepage.vue').default);
 
 const app = new Vue({
-    el: '#app'
+    el: '.main',
 });

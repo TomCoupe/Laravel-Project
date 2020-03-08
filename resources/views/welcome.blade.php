@@ -11,12 +11,10 @@
 
     </head>
     <body>
-        <div id="app">
-            <div class="container">
-                <homepage></homepage>
-            </div>
-        </div>
-
-        <script src="{{ asset('js/app.js') }}"></script>
+        <main class="main" id="main">
+            <homepage></homepage>
+        </main>
     </body>
+
+    <script src="{{ mix('js/app.js') }}"></script>
 </html>
