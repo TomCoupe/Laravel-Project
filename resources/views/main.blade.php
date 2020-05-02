@@ -12,9 +12,14 @@
     </head>
     <body>
         <main class="main" id="main">
-            <homepage></homepage>
+            <section class="content">
+                <div class="content__inner" id="main">
+                    @yield('content')
+                </div>
+            </section>
         </main>
     </body>
 
     <script src="{{ mix('js/app.js') }}"></script>
+    @yield('scripts')
 </html>
