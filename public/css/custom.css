@@ -8,3 +8,41 @@
     background-color: #a3a3a3;
     text-align: center;
 }
+.text-center {
+    text-align: center;
+}
+.grey-background {
+    background-color: #a3a3a3;
+}
+.half-width {
+    width: 50%;
+}
+.card-dark {
+    background-color: #a3a3a3;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.center-champion-search {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+.center-textfield {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

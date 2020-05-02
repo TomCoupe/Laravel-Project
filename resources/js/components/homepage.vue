@@ -1,7 +1,8 @@
 <template>
-    <div>
-        <h2>dsfklhnsdlkf</h2>
-        <button class="btn btn-danger">Hello</button>
+    <div class="center-champion-search">
+        <h2 class="card-title">Champion Search</h2>
+        <input class="form-control" placeholder="Please input a champion name">
+        <button class="btn btn-dark">Search</button>
     </div>
 </template>
 
