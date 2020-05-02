@@ -1945,8 +1945,19 @@ var lol_champions__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpac
   name: 'Homepage.vue',
   data: function data() {
     return {
-      championArray: lol_champions__WEBPACK_IMPORTED_MODULE_0__
+      championArray: lol_champions__WEBPACK_IMPORTED_MODULE_0__,
+      champName: ''
     };
+  },
+  methods: {
+    showChampion: function showChampion() {
+      var app = this;
+      axios.post('/champion/' + this.champName).then(function (response) {
+        console.log(response);
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    }
   },
   mounted: function mounted() {
     console.log(lol_champions__WEBPACK_IMPORTED_MODULE_0__);
@@ -19595,23 +19606,41 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("input", {
+      directives: [
+        {
+          name: "model",
+          rawName: "v-model",
+          value: _vm.champName,
+          expression: "champName"
+        }
+      ],
       staticClass: "form-control",
-      attrs: { list: "champion", placeholder: "Please input a champion name" }
+      attrs: { list: "champion", placeholder: "Please input a champion name" },
+      domProps: { value: _vm.champName },
+      on: {
+        input: function($event) {
+          if ($event.target.composing) {
+            return
+          }
+          _vm.champName = $event.target.value
+        }
+      }
     }),
     _vm._v(" "),
     _c(
       "datalist",
       { attrs: { id: "champion" } },
-      [
-        _vm._v("\n        ss"),
-        _vm._l(_vm.championArray, function(champ) {
-          return _c("option", { domProps: { value: champ.name } })
-        })
-      ],
-      2
+      _vm._l(_vm.championArray, function(champ) {
+        return _c("option", { domProps: { value: champ.name } })
+      }),
+      0
     ),
     _vm._v(" "),
-    _c("button", { staticClass: "btn btn-dark" }, [_vm._v("Search")])
+    _c(
+      "button",
+      { staticClass: "btn btn-dark", on: { click: _vm.showChampion } },
+      [_vm._v("Search")]
+    )
   ])
 }
 var staticRenderFns = []
