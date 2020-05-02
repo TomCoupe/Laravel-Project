@@ -1914,13 +1914,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Homepage.vue',
   data: function data() {
     return {};
-  },
-  mounted: function mounted() {
-    alert('hello');
   }
 });
 
@@ -19532,7 +19530,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("h2", [_vm._v("dsfklhnsdlkf")])])
+    return _c("div", [
+      _c("h2", [_vm._v("dsfklhnsdlkf")]),
+      _vm._v(" "),
+      _c("button", { staticClass: "btn btn-danger" }, [_vm._v("Hello")])
+    ])
   }
 ]
 render._withStripped = true
@@ -31838,8 +31840,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/thomascoupe/Documents/Laravel-Project/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/thomascoupe/Documents/Laravel-Project/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\TomCo\OneDrive\Documents\php_stuff\Laravel\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\TomCo\OneDrive\Documents\php_stuff\Laravel\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

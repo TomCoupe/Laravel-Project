@@ -1,6 +1,8 @@
 @extends('main')
-<div class="header position-center">
-    <h1>Header</h1>
+
+@section('content')
+<div class="header">
+    <h1 class="header-colour">Champion Stats</h1>
 </div>
 <div class="card">
     <div class="card-body">
@@ -8,3 +10,4 @@
         <homepage></homepage>
     </div>
 </div>
+@endsection
