@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::post('/champion/{name}', 'ChampionController@showChampion');
+Route::get('/champion/{name}', 'ChampionController@showChampion');

@@ -23,17 +23,15 @@ export default {
     methods: {
       showChampion() {
           let app = this;
-          axios.post('/champion/'+ this.champName)
-              .then(function (response) {
-                  console.log(response);
-              })
-              .catch(function (error) {
-                 console.log(error);
-              });
+          window.location.href = '/champion/' + this.champName;
+          // axios.get('/champion/'+ this.champName)
+          //     .then(function (response) {
+          //         console.log(response);
+          //     })
+          //     .catch(function (error) {
+          //        console.log(error);
+          //     });
       }
     },
-    mounted() {
-        console.log(champions);
-    }
 }
 </script>

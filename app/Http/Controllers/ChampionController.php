@@ -9,6 +9,6 @@ use Illuminate\Support\Facades\Log;
 class ChampionController
 {
     public function showChampion($request) {
-        Log::info($request);
+        return view('champion')->with(['champion' => $request]);
     }
 }
