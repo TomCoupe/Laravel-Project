@@ -1918,6 +1918,35 @@ var lol_champions__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpac
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Champion.vue",
@@ -19614,7 +19643,139 @@ var render = function() {
       attrs: { src: this.champData.icon }
     }),
     _vm._v(" "),
-    _c("div", { staticClass: "center-champion-search" })
+    _c("div", [
+      _vm._v("\n        " + _vm._s(this.champData.description) + "\n    ")
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "center-champion-search" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-6" }, [
+          _vm._v(
+            "\n                Armor: " +
+              _vm._s(this.champData.stats.armor) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Armor per level: " +
+              _vm._s(this.champData.stats.armorperlevel) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Attack damage: " +
+              _vm._s(this.champData.stats.attackdamage) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Attack damage per level: " +
+              _vm._s(this.champData.stats.attackdamageperlevel) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Attack range: " +
+              _vm._s(this.champData.stats.attackrange) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Attack speed off set: " +
+              _vm._s(this.champData.stats.attackspeedoffset) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Attack speed per level: " +
+              _vm._s(this.champData.stats.attackspeedperlevel) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Critical strike chance: " +
+              _vm._s(this.champData.stats.crit) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Critical strike chance per level: " +
+              _vm._s(this.champData.stats.critperlevel) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Hit points (hp): " +
+              _vm._s(this.champData.stats.hp) +
+              " "
+          ),
+          _c("br")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-sm-6" }, [
+          _vm._v(
+            "\n                Hit points per level: " +
+              _vm._s(this.champData.stats.hpperlevel) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Hit points regen: " +
+              _vm._s(this.champData.stats.hpregen) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Hit points regen per level: " +
+              _vm._s(this.champData.stats.hpregenperlevel) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Movement speed: " +
+              _vm._s(this.champData.stats.movespeed) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Magic penetration: " +
+              _vm._s(this.champData.stats.mp) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Magic penetration per level: " +
+              _vm._s(this.champData.stats.mpperlevel) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Magic penetration regen: " +
+              _vm._s(this.champData.stats.mpregen) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Magic penetration regen per level: " +
+              _vm._s(this.champData.stats.mpregenperlevel) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Spell block: " +
+              _vm._s(this.champData.stats.spellblock) +
+              " "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                Spell block per level: " +
+              _vm._s(this.champData.stats.spellblockperlevel) +
+              " "
+          ),
+          _c("br")
+        ])
+      ])
+    ])
   ])
 }
 var staticRenderFns = []
