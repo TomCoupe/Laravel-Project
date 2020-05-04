@@ -1915,6 +1915,9 @@ var lol_champions__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpac
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Champion.vue",
@@ -1922,8 +1925,22 @@ var lol_champions__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpac
   data: function data() {
     return {
       championArray: lol_champions__WEBPACK_IMPORTED_MODULE_0__,
-      champName: this.champname
+      champName: this.champname,
+      champData: []
     };
+  },
+  mounted: function mounted() {
+    this.findChampionByName();
+  },
+  methods: {
+    findChampionByName: function findChampionByName() {
+      for (var champ in this.championArray) {
+        if (this.championArray[champ].name == this.champName) {
+          this.champData = this.championArray[champ];
+          return;
+        }
+      }
+    }
   }
 });
 
@@ -19586,7 +19603,19 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "center-champion-search" })
+  return _c("div", [
+    _c("img", {
+      staticStyle: { width: "50px" },
+      attrs: { src: this.champData.icon }
+    }),
+    _vm._v(" " + _vm._s(this.champData.title) + " "),
+    _c("img", {
+      staticStyle: { width: "50px" },
+      attrs: { src: this.champData.icon }
+    }),
+    _vm._v(" "),
+    _c("div", { staticClass: "center-champion-search" })
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
