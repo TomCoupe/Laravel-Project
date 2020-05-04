@@ -6,6 +6,8 @@
             <option v-for="champ in championArray" :value="champ.name"></option>
         </datalist>
         <button class="btn btn-dark" @click="showChampion">Search</button>
+        <button class="btn btn-dark" @click="generateRandomChampion">Random champion</button>
+
     </div>
 </template>
 
@@ -22,16 +24,13 @@ export default {
     },
     methods: {
       showChampion() {
-          let app = this;
           window.location.href = '/champion/' + this.champName;
-          // axios.get('/champion/'+ this.champName)
-          //     .then(function (response) {
-          //         console.log(response);
-          //     })
-          //     .catch(function (error) {
-          //        console.log(error);
-          //     });
-      }
+      },
+        generateRandomChampion() {
+          var randomNumber = Math.floor(Math.random() * 142);
+          var randomChamp = this.championArray[randomNumber].name;
+          window.location.href = '/champion/' + randomChamp;
+          },
     },
 }
 </script>

@@ -1951,6 +1951,9 @@ var lol_champions__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpac
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Champion.vue",
@@ -1973,6 +1976,14 @@ var lol_champions__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpac
           return;
         }
       }
+    },
+    generateRandomChampion: function generateRandomChampion() {
+      var randomNumber = Math.floor(Math.random() * 142);
+      var randomChamp = this.championArray[randomNumber].name;
+      window.location.href = '/champion/' + randomChamp;
+    },
+    home: function home() {
+      window.location.href = '/';
     }
   }
 });
@@ -2001,6 +2012,8 @@ var lol_champions__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpac
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Homepage.vue',
@@ -2012,14 +2025,12 @@ var lol_champions__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpac
   },
   methods: {
     showChampion: function showChampion() {
-      var app = this;
-      window.location.href = '/champion/' + this.champName; // axios.get('/champion/'+ this.champName)
-      //     .then(function (response) {
-      //         console.log(response);
-      //     })
-      //     .catch(function (error) {
-      //        console.log(error);
-      //     });
+      window.location.href = '/champion/' + this.champName;
+    },
+    generateRandomChampion: function generateRandomChampion() {
+      var randomNumber = Math.floor(Math.random() * 142);
+      var randomChamp = this.championArray[randomNumber].name;
+      window.location.href = '/champion/' + randomChamp;
     }
   }
 });
@@ -19786,7 +19797,22 @@ var render = function() {
           _c("br")
         ])
       ])
-    ])
+    ]),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _c("button", { staticClass: "btn btn-dark", on: { click: _vm.home } }, [
+      _vm._v("Home")
+    ]),
+    _vm._v(" "),
+    _c(
+      "button",
+      {
+        staticClass: "btn btn-dark",
+        on: { click: _vm.generateRandomChampion }
+      },
+      [_vm._v("Random champion")]
+    )
   ])
 }
 var staticRenderFns = []
@@ -19851,6 +19877,15 @@ var render = function() {
       "button",
       { staticClass: "btn btn-dark", on: { click: _vm.showChampion } },
       [_vm._v("Search")]
+    ),
+    _vm._v(" "),
+    _c(
+      "button",
+      {
+        staticClass: "btn btn-dark",
+        on: { click: _vm.generateRandomChampion }
+      },
+      [_vm._v("Random champion")]
     )
   ])
 }

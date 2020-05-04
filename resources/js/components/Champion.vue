@@ -36,6 +36,9 @@
                 </div>
             </div>
         </div>
+        <br>
+        <button class="btn btn-dark" @click="home">Home</button>
+        <button class="btn btn-dark" @click="generateRandomChampion">Random champion</button>
     </div>
 </template>
 
@@ -63,6 +66,14 @@
                         return;
                     }
                 }
+            },
+            generateRandomChampion() {
+                var randomNumber = Math.floor(Math.random() * 142);
+                var randomChamp = this.championArray[randomNumber].name;
+                window.location.href = '/champion/' + randomChamp;
+            },
+            home() {
+                window.location.href = '/';
             }
         }
     }
