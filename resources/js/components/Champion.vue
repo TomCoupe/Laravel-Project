@@ -2,9 +2,13 @@
     <div>
         <img :src="this.champData.icon" style="width: 50px"> {{this.champData.title}} <img :src="this.champData.icon" style="width: 50px">
         <div>
+            <br>
+            <h6 class="fun-font">Champion description</h6>
             {{this.champData.description}}
         </div>
-        <div class="center-champion-search">
+        <br>
+        <div>
+            <h6 class="fun-font">Champion Stats</h6>
             <div class="row">
                 <div class="col-sm-6">
                     Armor: {{this.champData.stats.armor}} <br>

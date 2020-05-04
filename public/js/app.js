@@ -1947,6 +1947,10 @@ var lol_champions__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpac
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Champion.vue",
@@ -19644,10 +19648,17 @@ var render = function() {
     }),
     _vm._v(" "),
     _c("div", [
+      _c("br"),
+      _vm._v(" "),
+      _c("h6", { staticClass: "fun-font" }, [_vm._v("Champion description")]),
       _vm._v("\n        " + _vm._s(this.champData.description) + "\n    ")
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "center-champion-search" }, [
+    _c("br"),
+    _vm._v(" "),
+    _c("div", [
+      _c("h6", { staticClass: "fun-font" }, [_vm._v("Champion Stats")]),
+      _vm._v(" "),
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-sm-6" }, [
           _vm._v(

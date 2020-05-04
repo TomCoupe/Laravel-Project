@@ -5,20 +5,20 @@
     margin: auto;
 }
 .header-colour {
-    background-color: #a3a3a3;
+    background-color: #70a7ff;
     text-align: center;
 }
 .text-center {
     text-align: center;
 }
 .grey-background {
-    background-color: #a3a3a3;
+    background-color: #70a7ff;
 }
 .half-width {
     width: 50%;
 }
 .card-dark {
-    background-color: #a3a3a3;
+    background-color: #70a7ff;
     width: 600px;
     height: 600px;
     position: absolute;
