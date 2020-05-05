@@ -19672,128 +19672,86 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-sm-6" }, [
-          _vm._v(
-            "\n                Armor: " +
-              _vm._s(this.champData.stats.armor) +
-              " "
-          ),
+          _c("b", [_vm._v("Armor:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.armor) + " "),
           _c("br"),
-          _vm._v(
-            "\n                Armor per level: " +
-              _vm._s(this.champData.stats.armorperlevel) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Armor per level:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.armorperlevel) + " "),
           _c("br"),
-          _vm._v(
-            "\n                Attack damage: " +
-              _vm._s(this.champData.stats.attackdamage) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Attack damage:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.attackdamage) + " "),
           _c("br"),
-          _vm._v(
-            "\n                Attack damage per level: " +
-              _vm._s(this.champData.stats.attackdamageperlevel) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Attack damage per level:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.attackdamageperlevel) + " "),
           _c("br"),
-          _vm._v(
-            "\n                Attack range: " +
-              _vm._s(this.champData.stats.attackrange) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Attack range:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.attackrange) + " "),
           _c("br"),
-          _vm._v(
-            "\n                Attack speed off set: " +
-              _vm._s(this.champData.stats.attackspeedoffset) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Attack speed off set:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.attackspeedoffset) + " "),
           _c("br"),
-          _vm._v(
-            "\n                Attack speed per level: " +
-              _vm._s(this.champData.stats.attackspeedperlevel) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Attack speed per level:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.attackspeedperlevel) + " "),
           _c("br"),
-          _vm._v(
-            "\n                Critical strike chance: " +
-              _vm._s(this.champData.stats.crit) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Critical strike chance:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.crit) + " "),
           _c("br"),
-          _vm._v(
-            "\n                Critical strike chance per level: " +
-              _vm._s(this.champData.stats.critperlevel) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Critical strike chance per level:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.critperlevel) + " "),
           _c("br"),
-          _vm._v(
-            "\n                Hit points (hp): " +
-              _vm._s(this.champData.stats.hp) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Hit points (hp):")]),
+          _vm._v(" " + _vm._s(this.champData.stats.hp) + " "),
           _c("br")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-sm-6" }, [
-          _vm._v(
-            "\n                Hit points per level: " +
-              _vm._s(this.champData.stats.hpperlevel) +
-              " "
-          ),
+          _c("b", [_vm._v("Hit points per level:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.hpperlevel)),
           _c("br"),
-          _vm._v(
-            "\n                Hit points regen: " +
-              _vm._s(this.champData.stats.hpregen) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Hit points regen:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.hpregen)),
           _c("br"),
-          _vm._v(
-            "\n                Hit points regen per level: " +
-              _vm._s(this.champData.stats.hpregenperlevel) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Hit points regen per level:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.hpregenperlevel)),
           _c("br"),
-          _vm._v(
-            "\n                Movement speed: " +
-              _vm._s(this.champData.stats.movespeed) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Movement speed:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.movespeed)),
           _c("br"),
-          _vm._v(
-            "\n                Magic penetration: " +
-              _vm._s(this.champData.stats.mp) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Magic penetration:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.mp)),
           _c("br"),
-          _vm._v(
-            "\n                Magic penetration per level: " +
-              _vm._s(this.champData.stats.mpperlevel) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Magic penetration per level:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.mpperlevel)),
           _c("br"),
-          _vm._v(
-            "\n                Magic penetration regen: " +
-              _vm._s(this.champData.stats.mpregen) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Magic pen regen:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.mpregen)),
           _c("br"),
-          _vm._v(
-            "\n                Magic penetration regen per level: " +
-              _vm._s(this.champData.stats.mpregenperlevel) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Magic pen regen per level:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.mpregenperlevel)),
           _c("br"),
-          _vm._v(
-            "\n                Spell block: " +
-              _vm._s(this.champData.stats.spellblock) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Spell block:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.spellblock) + " "),
           _c("br"),
-          _vm._v(
-            "\n                Spell block per level: " +
-              _vm._s(this.champData.stats.spellblockperlevel) +
-              " "
-          ),
+          _vm._v(" "),
+          _c("b", [_vm._v("Spell block per level:")]),
+          _vm._v(" " + _vm._s(this.champData.stats.spellblockperlevel) + " "),
           _c("br")
         ])
       ])
